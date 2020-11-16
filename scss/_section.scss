@@ -1,0 +1,124 @@
+section {
+    a, a:hover {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.header-section {
+    padding: 105px 0px 40px;
+    color: white;
+    p {
+        margin-bottom: 0px;
+    }
+    h2 {
+        font-size: 36px;
+        text-decoration: underline;
+        font-weight: lighter;
+        font-style: italic;
+        margin-bottom: 35px;
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+        }
+    }
+    h1 {
+        font-size: 50px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        @media screen and (max-width: 768px) {
+            font-size: 40px;
+        }
+    }
+}
+
+// analises feministas
+.analises-feministas {
+    .box-article {
+        .img-article {
+            margin-bottom: 36px;
+            height: 330px;
+            @media screen and (max-width: 768px) {
+                height: 175px;
+            }
+        }
+    
+        .text-article {
+            margin-top: 19px;
+            font-size: 22px;
+            line-height: 24px;
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    
+        .img-article-interview {
+            margin-bottom: 36px;
+            height: 281px;
+            @media screen and (max-width: 768px) {
+                height: 175px;
+            }
+        }
+    
+    }
+}
+
+
+.interview {
+    .box-article {
+        margin: 70px 0px;
+    }
+    .text-article {
+        margin-top: 19px;
+        font-size: 22px;
+        line-height: 24px;
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+    .interviewee {
+        font-size: 18px;
+    }
+    .img-article-interview {
+        margin-bottom: 36px;
+        height: 281px;
+        @media screen and (max-width: 768px) {
+            height: 175px;
+        }
+    }
+}
+
+// dados
+.icon-plus {
+    background-image: url(http://mulheresnapandemia.sof.org.br/wp-content/themes/sofgn/photos/icon-plus.svg);
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    margin-top: 30px;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.section-dados {
+    border-bottom: 2px solid black;
+    padding-bottom: 120px;
+    margin-top: 120px;
+}
+
+.section-dados:first-of-type {
+    margin-top: 120px;
+}
+
+.section-dados:last-of-type {
+    margin-bottom: 120px;
+    border-bottom: 0px;
+}
+
+.border-dados {
+    margin: 120px 0px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        margin: 70px 0px;
+    }
+}

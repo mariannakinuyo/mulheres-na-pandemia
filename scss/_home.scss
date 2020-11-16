@@ -1,0 +1,328 @@
+.home-hero {
+    height: 75vh;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        height: 45vh;
+        background-position: left;
+    }
+    p {
+        margin-bottom: 0px;
+    }
+}
+
+.height-hero {
+    @media screen and (max-width: 768px) {
+        height: 45vh;
+        position: relative;
+    }
+    .position-text {
+        @media screen and (max-width: 768px) {
+            bottom: 15px;
+            position: absolute;
+        }
+    }
+}
+
+.mt-150 {
+    padding-top: 122px;
+    @media screen and (max-width: 768px) {
+        padding-top: 90px;
+    }
+    h1 {
+        font-size: 48px;
+        text-decoration: underline;
+        font-weight: 300;
+        font-style: italic;
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+}
+
+.large-number {
+    font-size: 164px;
+    line-height: 180px;
+    font-family: $font-primary;
+    font-weight: 100;
+    @media screen and (max-width: 768px) {
+        font-size: 100px;
+        line-height: 120px;
+    }
+}
+
+.number-text {
+    font-size: 28px;
+    line-height: 40px;
+    font-family: $font-primary;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: underline;
+    color: $red;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.number-text.white {
+    cursor: none;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.bg-purple {
+    background-color: $purple;
+    padding: 80px 0px;
+}
+
+.page-home {
+    h3 {
+        text-decoration: underline;
+        color: white;
+        font-style: italic;
+        font-weight: 100;
+        font-size: 26px;
+        @media screen and (max-width: 768px) {
+            font-size: 22px;
+        }
+    }
+    
+    h4 {
+        color: white;
+        font-weight: 100;
+        font-size: 20px;
+        line-height: 28px;
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .line-horizontal {
+        border-bottom: 2px solid black;
+        width: 98%;
+        margin-top: 100px 0px;
+    }
+
+    img.img-article {
+        max-width: 100%;
+        height: 124px;
+        margin-bottom: 20px;
+    }
+
+    .w-img {
+        width: 155px;
+    }
+    
+    .mt-100 {
+        margin-top: 100px;
+    }
+
+    .ilustra-home {
+        @media screen and (max-width: 768px) {
+            width: 120px;
+            margin-top: 25px;
+        }
+    }
+
+    .box-article .img-article {
+        height: 165px;
+        margin-bottom: 20px;
+        @media screen and (max-width: 768px) {
+            height: 185px;
+        }
+    }
+
+    .dif-size .box-article .img-article {
+        height: 130px;
+        @media screen and (max-width: 768px) {
+            height: 185px;
+        }
+    }
+}
+
+.p-80 {
+    padding: 100px 0px;
+    @media screen and (max-width: 768px) {
+        padding: 70px 0px;
+    }
+}
+
+.slider-home {
+    padding: 40px 0px;
+    background-color: #fff;
+    height: auto;
+    width: 100%;
+    .carousel-control-next-icon {
+        background-image: url(http://mulheresnapandemia.sof.org.br/wp-content/themes/sofgn/photos/arrow-right.png);
+        width: 20px;
+        height: 32px;
+    }
+    .carousel-control-prev-icon {
+        background-image: url(http://mulheresnapandemia.sof.org.br/wp-content/themes/sofgn/photos/arrow-left.png);
+        width: 20px;
+        height: 32px;
+    }
+    
+    .carousel-cell {
+        width: 435px;
+        margin-right: 10px;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        img {
+            width: 435px;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .flickity-page-dots {
+        display: none;
+    }
+    
+}
+
+.box-article {
+    // font-size: 12px;
+    margin: 50px 0px;
+
+    .title-red {
+        background-color: $red;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        padding-left: 10px;
+    }
+
+    .title-purple {
+        background-color: $purple;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        padding-left: 10px;
+    }
+
+    .title-green {
+        background-color: $green;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        padding-left: 10px;
+    }
+
+    .text-article {
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .interviewee {
+        font-style: italic;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .sub-interviewee {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .title-article {
+        font-weight: 900;
+        margin-bottom: 0px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+
+}
+
+.img-graphic-home {
+    position: absolute;
+    display: none;
+    border: 1px solid black;
+    z-index: 1000;
+    &.max-height img{
+        max-height: 540px;
+    }
+    @media screen and (max-width: 768px) {
+        position: relative;
+    }
+}
+
+.text-home {
+    padding-top: 186px;
+    width: 70%;
+    @media screen and (max-width: 768px) {
+        padding-top: 20px;
+        width: 100%;
+    }
+}
+
+.show-graphic {
+    margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px 10px;
+    &:hover {
+        opacity: 0.8;
+    }
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+}
+
+.icon-graphic {
+    width: 48px;
+    @media screen and (max-width: 768px) {
+        width: 40px;
+        height: auto;
+        display: inline-block;
+    }
+}
+
+.modal .modal-header {
+    border: 0px;
+    padding: 0px 20px;
+}
+
+.btn-visu {
+    line-height: 48px;
+    padding-left: 10px;
+}
+
+.first-img {
+    max-width: 450px;
+}
+
+.border-vertical {
+    border-left: 1px solid rgba(0,0,0,0.2);
+    margin-top: 120px;
+    padding-left: 30px;
+    @media screen and (max-width: 768px) {
+        border-left: 0px;
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+}

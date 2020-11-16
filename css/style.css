@@ -1,0 +1,1066 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 18px;
+  margin: 0px;
+}
+html.overflow-hidden, body.overflow-hidden {
+  overflow-y: hidden;
+}
+
+body {
+  margin: 0px !important;
+}
+
+strong, b {
+  font-weight: 500;
+}
+
+a, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .h6, p, span, .small {
+  font-family: "Roboto", sans-serif !important;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  word-break: break-word;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+p.subtitle {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+p.small {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.18em;
+}
+h1.big {
+  font-size: 2.27em;
+}
+h1.bigger {
+  font-size: 2.727em;
+}
+
+h2 {
+  font-size: 1.818em;
+}
+
+h3 {
+  font-size: 1.636em;
+}
+
+h4 {
+  font-size: 1.454em;
+}
+
+h5 {
+  font-size: 1.363em;
+}
+
+h6 {
+  font-size: 1.09em;
+}
+h6.txt-timeline {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.h6 {
+  font-size: 1.09em;
+}
+
+span {
+  font-size: 0.54em;
+}
+span.big {
+  font-size: 0.72em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.green, a.green {
+  color: #1D5D53;
+}
+
+.red, a.red {
+  color: #FF2445;
+}
+
+.white {
+  color: white !important;
+}
+
+.purple, a.purple {
+  color: #6E49AD;
+}
+
+.bg-green {
+  background-color: #1D5D53;
+}
+
+.bg-red {
+  background-color: #FF2445;
+}
+
+.bg-purple {
+  background-color: #6E49AD;
+}
+
+.bg-yellow {
+  background-color: #BBB366;
+}
+
+.bg-grey {
+  background-color: #333333;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.w-70 {
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .w-70 {
+    width: 100%;
+  }
+}
+
+.bg-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .w-50 {
+    width: 100% !important;
+  }
+}
+
+button {
+  background-color: transparent;
+}
+
+header {
+  background-color: black;
+  height: 65px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+header a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
+}
+header ul li {
+  display: block;
+  font-size: 14px;
+}
+header .title {
+  font-size: 20px;
+  text-decoration: underline;
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: 65px;
+}
+@media screen and (max-width: 768px) {
+  header .title {
+    font-size: 10px;
+  }
+}
+header .icon-graphic {
+  width: 38px;
+  margin-top: 17px;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  margin-top: 22px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu-menu-container #menu-menu {
+  position: absolute;
+  width: 215px;
+  margin: 25px 0px 0px;
+  right: 0px;
+  background: black;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menu-menu-container #menu-menu li {
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+.menu-menu-container #menu-menu li.b-none {
+  border-bottom: 0px;
+}
+
+#menuToggle input:checked ~ .menu-menu-container ul {
+  transform: none;
+  opacity: 1;
+  display: block;
+}
+
+.menu-menu-container #menu-menu {
+  transform: none;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.home-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 6px 15px;
+  margin-top: 13px;
+  margin-right: 30px;
+  background-color: #6E49AD;
+}
+@media screen and (max-width: 768px) {
+  .button {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+}
+
+.button-download {
+  color: white;
+  background-image: url(http://mulheresnapandemia.sof.org.br/wp-content/themes/sofgn/photos/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+@media screen and (max-width: 768px) {
+  .button-download {
+    font-size: 10px;
+    background-image: unset;
+    padding-left: 5px;
+  }
+}
+
+.button-play {
+  background-image: url(http://mulheresnapandemia.sof.org.br/wp-content/themes/sofgn/photos/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 44px;
+  height: 38px;
+  margin-top: 13px;
+  margin-right: 27px;
+}
+@media screen and (max-width: 768px) {
+  .button-play {
+    display: none;
+  }
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  padding: 50px 0;
+  height: auto;
+  margin-top: 50px;
+}
+footer .menu li.current-menu-item a {
+  font-weight: 200;
+  border-bottom: 1px solid white;
+}
+footer .menu li a {
+  font-weight: 200;
+}
+footer p {
+  margin: 0px;
+  margin-top: 10px;
+  line-height: 100%;
+  color: #fff;
+}
+
+.icon-footer-1 {
+  background: url("../photos/footer-1.svg") no-repeat center/contain;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  .icon-footer-1 {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.icon-footer-2 {
+  background: url("../photos/footer-3.svg") no-repeat center/contain;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  .icon-footer-2 {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.icon-footer-3 {
+  background: url("../photos/footer-2.svg") no-repeat center/contain;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  .icon-footer-3 {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.logo-footer {
+  width: 90px;
+}
+@media screen and (max-width: 768px) {
+  .logo-footer {
+    width: 68px;
+  }
+}
+
+.logo-gn-footer {
+  width: 90px;
+  margin-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .logo-gn-footer {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-footer p {
+    font-size: 12px;
+  }
+}
+
+article {
+  margin-bottom: 100px;
+}
+article a {
+  text-decoration: none;
+  color: #6E49AD;
+  font-weight: 600;
+}
+article a:hover {
+  text-decoration: underline;
+  color: #6E49AD;
+}
+article h2 {
+  margin: 30px 0px;
+  font-size: 36px;
+  font-weight: 800;
+}
+@media screen and (max-width: 768px) {
+  article h2 {
+    font-size: 32px;
+  }
+}
+article p {
+  font-size: 16px;
+}
+article button.big-button {
+  padding: 15px 35px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 60px;
+  border: 0px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  article button.big-button {
+    font-size: 18px;
+  }
+}
+
+.header-section.header-analises {
+  color: black;
+}
+
+a.navegation-section {
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  a.navegation-section {
+    font-size: 16px;
+  }
+}
+
+a.navegation-section:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+article.single-analises p {
+  word-break: break-word;
+}
+article.single-analises .thumb img {
+  margin-bottom: 30px;
+}
+article.single-analises figure {
+  text-align: center;
+}
+article.single-analises figure img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+article.single-analises figure figcaption {
+  font-size: 14px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+}
+p strong {
+  font-weight: 600;
+}
+
+blockquote p {
+  margin: 18px 0 18px;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: underline;
+  color: #6E49AD;
+  font-weight: 400;
+  margin-left: 130px;
+}
+@media screen and (max-width: 768px) {
+  blockquote p {
+    font-size: 16px;
+    margin-left: 70px;
+  }
+}
+
+.wp-block-quote.is-large p, .wp-block-quote.is-style-large p {
+  margin: 18px 0 18px;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: underline;
+  color: #6E49AD;
+  font-weight: 400;
+  margin-left: 130px;
+}
+@media screen and (max-width: 768px) {
+  .wp-block-quote.is-large p, .wp-block-quote.is-style-large p {
+    font-size: 16px;
+    margin-left: 50px;
+  }
+}
+
+.linha-fina {
+  font-size: 20px;
+  line-height: 26px;
+  font-style: italic;
+  font-weight: 100;
+  margin-bottom: 25px;
+}
+
+.home-hero {
+  height: 75vh;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .home-hero {
+    height: 45vh;
+    background-position: left;
+  }
+}
+.home-hero p {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .height-hero {
+    height: 45vh;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .height-hero .position-text {
+    bottom: 15px;
+    position: absolute;
+  }
+}
+
+.mt-150 {
+  padding-top: 122px;
+}
+@media screen and (max-width: 768px) {
+  .mt-150 {
+    padding-top: 90px;
+  }
+}
+.mt-150 h1 {
+  font-size: 48px;
+  text-decoration: underline;
+  font-weight: 300;
+  font-style: italic;
+}
+@media screen and (max-width: 768px) {
+  .mt-150 h1 {
+    font-size: 30px;
+  }
+}
+
+.large-number {
+  font-size: 164px;
+  line-height: 180px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+@media screen and (max-width: 768px) {
+  .large-number {
+    font-size: 100px;
+    line-height: 120px;
+  }
+}
+
+.number-text {
+  font-size: 28px;
+  line-height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  text-decoration: underline;
+  color: #FF2445;
+  cursor: pointer;
+}
+.number-text:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .number-text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.number-text.white {
+  cursor: none;
+}
+.number-text.white:hover {
+  opacity: 1;
+}
+
+.bg-purple {
+  background-color: #6E49AD;
+  padding: 80px 0px;
+}
+
+.page-home h3 {
+  text-decoration: underline;
+  color: white;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 26px;
+}
+@media screen and (max-width: 768px) {
+  .page-home h3 {
+    font-size: 22px;
+  }
+}
+.page-home h4 {
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 28px;
+}
+@media screen and (max-width: 768px) {
+  .page-home h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.page-home p {
+  font-size: 16px;
+}
+.page-home .line-horizontal {
+  border-bottom: 2px solid black;
+  width: 98%;
+  margin-top: 100px 0px;
+}
+.page-home img.img-article {
+  max-width: 100%;
+  height: 124px;
+  margin-bottom: 20px;
+}
+.page-home .w-img {
+  width: 155px;
+}
+.page-home .mt-100 {
+  margin-top: 100px;
+}
+@media screen and (max-width: 768px) {
+  .page-home .ilustra-home {
+    width: 120px;
+    margin-top: 25px;
+  }
+}
+.page-home .box-article .img-article {
+  height: 165px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .page-home .box-article .img-article {
+    height: 185px;
+  }
+}
+.page-home .dif-size .box-article .img-article {
+  height: 130px;
+}
+@media screen and (max-width: 768px) {
+  .page-home .dif-size .box-article .img-article {
+    height: 185px;
+  }
+}
+
+.p-80 {
+  padding: 100px 0px;
+}
+@media screen and (max-width: 768px) {
+  .p-80 {
+    padding: 70px 0px;
+  }
+}
+
+.slider-home {
+  padding: 40px 0px;
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+.slider-home .carousel-control-next-icon {
+  background-image: url(http://mulheresnapandemia.sof.org.br/wp-content/themes/sofgn/photos/arrow-right.png);
+  width: 20px;
+  height: 32px;
+}
+.slider-home .carousel-control-prev-icon {
+  background-image: url(http://mulheresnapandemia.sof.org.br/wp-content/themes/sofgn/photos/arrow-left.png);
+  width: 20px;
+  height: 32px;
+}
+.slider-home .carousel-cell {
+  width: 435px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .slider-home .carousel-cell {
+    width: 100%;
+  }
+}
+.slider-home .carousel-cell img {
+  width: 435px;
+}
+@media screen and (max-width: 768px) {
+  .slider-home .carousel-cell img {
+    width: 100%;
+  }
+}
+.slider-home .flickity-page-dots {
+  display: none;
+}
+
+.box-article {
+  margin: 50px 0px;
+}
+.box-article .title-red {
+  background-color: #FF2445;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  padding-left: 10px;
+}
+.box-article .title-purple {
+  background-color: #6E49AD;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  padding-left: 10px;
+}
+.box-article .title-green {
+  background-color: #1D5D53;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  padding-left: 10px;
+}
+.box-article .text-article {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.box-article .interviewee {
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.box-article .sub-interviewee {
+  font-size: 16px;
+  line-height: 22px;
+}
+.box-article .title-article {
+  font-weight: 900;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+
+.img-graphic-home {
+  position: absolute;
+  display: none;
+  border: 1px solid black;
+  z-index: 1000;
+}
+.img-graphic-home.max-height img {
+  max-height: 540px;
+}
+@media screen and (max-width: 768px) {
+  .img-graphic-home {
+    position: relative;
+  }
+}
+
+.text-home {
+  padding-top: 186px;
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .text-home {
+    padding-top: 20px;
+    width: 100%;
+  }
+}
+
+.show-graphic {
+  margin-top: 30px;
+  cursor: pointer;
+  border: 1px solid black;
+  width: fit-content;
+  padding: 10px 10px;
+}
+.show-graphic:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .show-graphic {
+    margin-bottom: 30px;
+  }
+}
+
+.icon-graphic {
+  width: 48px;
+}
+@media screen and (max-width: 768px) {
+  .icon-graphic {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+  }
+}
+
+.modal .modal-header {
+  border: 0px;
+  padding: 0px 20px;
+}
+
+.btn-visu {
+  line-height: 48px;
+  padding-left: 10px;
+}
+
+.first-img {
+  max-width: 450px;
+}
+
+.border-vertical {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 120px;
+  padding-left: 30px;
+}
+@media screen and (max-width: 768px) {
+  .border-vertical {
+    border-left: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+}
+
+section a, section a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.header-section {
+  padding: 105px 0px 40px;
+  color: white;
+}
+.header-section p {
+  margin-bottom: 0px;
+}
+.header-section h2 {
+  font-size: 36px;
+  text-decoration: underline;
+  font-weight: lighter;
+  font-style: italic;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 768px) {
+  .header-section h2 {
+    font-size: 32px;
+  }
+}
+.header-section h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .header-section h1 {
+    font-size: 40px;
+  }
+}
+
+.analises-feministas .box-article .img-article {
+  margin-bottom: 36px;
+  height: 330px;
+}
+@media screen and (max-width: 768px) {
+  .analises-feministas .box-article .img-article {
+    height: 175px;
+  }
+}
+.analises-feministas .box-article .text-article {
+  margin-top: 19px;
+  font-size: 22px;
+  line-height: 24px;
+}
+@media screen and (max-width: 768px) {
+  .analises-feministas .box-article .text-article {
+    font-size: 16px;
+  }
+}
+.analises-feministas .box-article .img-article-interview {
+  margin-bottom: 36px;
+  height: 281px;
+}
+@media screen and (max-width: 768px) {
+  .analises-feministas .box-article .img-article-interview {
+    height: 175px;
+  }
+}
+
+.interview .box-article {
+  margin: 70px 0px;
+}
+.interview .text-article {
+  margin-top: 19px;
+  font-size: 22px;
+  line-height: 24px;
+}
+@media screen and (max-width: 768px) {
+  .interview .text-article {
+    font-size: 16px;
+  }
+}
+.interview .interviewee {
+  font-size: 18px;
+}
+.interview .img-article-interview {
+  margin-bottom: 36px;
+  height: 281px;
+}
+@media screen and (max-width: 768px) {
+  .interview .img-article-interview {
+    height: 175px;
+  }
+}
+
+.icon-plus {
+  background-image: url(http://mulheresnapandemia.sof.org.br/wp-content/themes/sofgn/photos/icon-plus.svg);
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  margin-top: 30px;
+}
+.icon-plus:hover {
+  opacity: 0.8;
+}
+
+.section-dados {
+  border-bottom: 2px solid black;
+  padding-bottom: 120px;
+  margin-top: 120px;
+}
+
+.section-dados:first-of-type {
+  margin-top: 120px;
+}
+
+.section-dados:last-of-type {
+  margin-bottom: 120px;
+  border-bottom: 0px;
+}
+
+.border-dados {
+  margin: 120px 0px;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .border-dados {
+    margin: 70px 0px;
+  }
+}
+
+/*!
+ * Bootstrap Grid v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */

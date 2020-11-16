@@ -1,0 +1,130 @@
+article {
+    margin-bottom: 100px;
+
+    a {
+        text-decoration: none;
+       color: $purple;
+       font-weight: 600;
+       &:hover {
+           text-decoration: underline;
+           color: $purple;
+       }
+    }
+
+    h2 {
+        margin: 30px 0px;
+        font-size: 36px;
+        font-weight: 800;
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button.big-button {
+        padding: 15px 35px;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 60px;
+        border: 0px;
+        cursor: pointer;
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.header-section.header-analises {
+    color: black;
+}
+
+a.navegation-section {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+a.navegation-section:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+article.single-analises {
+    p {
+        word-break: break-word;
+    }
+    .thumb {
+        // text-align: center;
+        img {
+            // height: 350px;
+            // float: left;
+            // margin-right: 55px;
+            margin-bottom: 30px;
+        }
+    }
+    figure {
+        text-align: center;
+        img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        figcaption {
+            font-size: 14px;
+        }
+    }
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    strong {
+        font-weight: 600;
+    }
+}
+
+blockquote p {
+    margin: 18px 0 18px;
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: underline;
+    color: $purple;
+    font-weight: 400;
+    margin-left: 130px;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+        margin-left: 70px;
+    }
+}
+
+.wp-block-quote.is-large p, .wp-block-quote.is-style-large p {
+    margin: 18px 0 18px;
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: underline;
+    color: $purple;
+    font-weight: 400;
+    margin-left: 130px;
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+        margin-left: 50px;
+    }
+}
+
+.linha-fina {
+    font-size: 20px;
+    line-height: 26px;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 25px;
+}
+
