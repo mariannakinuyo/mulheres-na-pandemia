@@ -1,5 +1,4 @@
-# TEMA DE WORDPRESS PARA O PROJETO MULHERES NA PANDEMIA
-
+# Tema de Wordpress "Mulheres na pandemia"
 Para começar um projeto sem o modelo:
 
     npm init
